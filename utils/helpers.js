@@ -5,7 +5,8 @@ import {
   MaterialIcons,
   MaterialCommunityIcons
 } from "@expo/vector-icons";
-import { white } from "./colors";
+import { red , purple ,blue } from "./colors";
+
 
 export function getMetricMetaInfo(metric) {
   const info = {
@@ -18,7 +19,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View>
-            <MaterialIcons name="directions-run" color={"black"} size={35} />
+            <MaterialIcons name="directions-run" color={"red"} size={35} />
           </View>
         );
       }
@@ -32,7 +33,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View>
-            <MaterialCommunityIcons name="bike" color={white} size={32} />
+            <MaterialCommunityIcons name="bike" color={red} size={35} />
           </View>
         );
       }
@@ -46,7 +47,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View>
-            <MaterialCommunityIcons name="swim" color={white} size={35} />
+            <MaterialCommunityIcons name="swim" color={red} size={35} />
           </View>
         );
       }
@@ -60,7 +61,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View>
-            <FontAwesome name="bed" color={white} size={30} />
+            <FontAwesome name="bed" color={purple} size={36} />
           </View>
         );
       }
@@ -74,7 +75,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View>
-            <MaterialCommunityIcons name="food" color={white} size={35} />
+            <MaterialCommunityIcons name="food" color={blue} size={40} />
           </View>
         );
       }
